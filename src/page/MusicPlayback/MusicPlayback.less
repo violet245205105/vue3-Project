@@ -1,0 +1,71 @@
+.MusicPlayback {
+    display: flex;
+    flex-direction: column;
+
+    i {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .music_top {
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+
+        .music_left {
+            flex: 1;
+            overflow: hidden;
+
+            .music-table {
+                background: var(--dark-background);
+                margin: 10px 0;
+
+                i {
+                    font-size: 12px;
+                }
+
+                tr {
+                    background: var(--dark-background);
+                    color: var(--dark-color);
+                    // text-align: center;
+                    border: none;
+
+                    th {
+                        background: var(--dark-background);
+                        color: var(--dark-color);
+                        // text-align: center;
+                        border: none;
+                    }
+                    td{
+                        border: none;
+                    }
+
+                }
+
+                tr:hover {
+                    color: skyblue;
+                }
+
+            }
+        }
+
+        .music_right {
+            width: 20%;
+        }
+    }
+
+    .music_bottom {
+        height: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .icon-xihuan {
+            color: red;
+        }
+
+        .music-slider {
+            width: 60%;
+        }
+    }
+}
