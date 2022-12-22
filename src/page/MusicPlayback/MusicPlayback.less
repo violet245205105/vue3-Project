@@ -21,19 +21,16 @@
                 margin: 10px 0;
 
                 i {
-                    font-size: 12px;
+                    font-size: 15px;
                 }
 
                 tr {
                     background: var(--dark-background);
                     color: var(--dark-color);
-                    // text-align: center;
                     border: none;
-
                     th {
                         background: var(--dark-background);
                         color: var(--dark-color);
-                        // text-align: center;
                         border: none;
                     }
                     td{
@@ -51,6 +48,9 @@
 
         .music_right {
             width: 20%;
+            padding: 20px;
+            text-align: center;
+            line-height: 40px;
         }
     }
 
@@ -63,9 +63,13 @@
         .icon-xihuan {
             color: red;
         }
-
-        .music-slider {
+        .music-slider-box{
             width: 60%;
+            .music-slider-box-connect {
+                display: flex;
+                justify-content: space-between;
+            }
         }
+        
     }
 }

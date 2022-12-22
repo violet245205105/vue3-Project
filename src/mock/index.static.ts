@@ -9,6 +9,16 @@ export interface MockUserList {
   avatar?: string;
 }
 
+export interface MusicListType {
+  music: string;
+  singer: string;
+  img: string;
+  bofangFlag: boolean;
+  musicName: string;
+  id: string;
+  ind?: number;
+}
+
 export const queryUrlPar = function (url: string) {
   url = url || window.location.href;
   var reg = /([^?=&]+)=([^?=&]+)/g;

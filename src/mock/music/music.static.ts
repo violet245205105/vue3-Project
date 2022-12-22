@@ -1,10 +1,67 @@
 export default [
   {
+    music: "/src/assets/mp3/华晨宇 - 好想我回来啊.flac",
+    singer: "华晨宇",
+    img: "/src/assets/img/hcy.png",
+    bofangFlag: false,
+    musicName: "好想我回来啊",
+    id: Math.random().toString().slice(-9),
+  },
+  {
+    music: "/src/assets/mp3/华晨宇 - 小镇里的花 (民乐版).flac",
+    singer: "华晨宇",
+    img: "/src/assets/img/hcy.png",
+    bofangFlag: false,
+    musicName: "小镇里的花 (民乐版)",
+    id: Math.random().toString().slice(-9),
+  },
+  {
+    music: "/src/assets/mp3/华晨宇 - 小镇里的花.flac",
+    singer: "华晨宇",
+    img: "/src/assets/img/hcy.png",
+    bofangFlag: false,
+    musicName: "小镇里的花",
+    id: Math.random().toString().slice(-9),
+  },
+  {
+    music: "/src/assets/mp3/华晨宇 - 飞行模式.flac",
+    singer: "华晨宇",
+    img: "/src/assets/img/hcy.png",
+    bofangFlag: false,
+    musicName: "飞行模式",
+    id: Math.random().toString().slice(-9),
+  },
+  {
+    music: "/src/assets/mp3/华晨宇 - 黑白艺术家.flac",
+    singer: "华晨宇",
+    img: "/src/assets/img/hcy.png",
+    bofangFlag: false,
+    musicName: "黑白艺术家",
+    id: Math.random().toString().slice(-9),
+  },
+  {
+    music: "/src/assets/mp3/华晨宇 - 花落时相遇.flac",
+    singer: "华晨宇",
+    img: "/src/assets/img/hcy.png",
+    bofangFlag: false,
+    musicName: "花落时相遇",
+    id: Math.random().toString().slice(-9),
+  },
+  {
+    music: "/src/assets/mp3/华晨宇 - 走，一起去看日出吧.flac",
+    singer: "华晨宇",
+    img: "/src/assets/img/hcy.png",
+    bofangFlag: false,
+    musicName: "走，一起去看日出吧",
+    id: Math.random().toString().slice(-9),
+  },
+  {
     music: "/src/assets/mp3/华晨宇 - 好想爱这个世界啊.mp3",
     singer: "华晨宇",
     img: "/src/assets/img/violet/violet (0).jpeg",
     bofangFlag: false,
     musicName: "好想爱这个世界啊",
+    id: Math.random().toString().slice(-9),
   },
   {
     music:
@@ -12,6 +69,7 @@ export default [
     singer: "马吟吟",
     img: "/src/assets/img/violet/violet (1).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "溯 (Reverse) feat",
   },
   {
@@ -20,6 +78,7 @@ export default [
     singer: "DAOKO (ダヲコ) _ 米津玄師",
     img: "/src/assets/img/violet/violet (2).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "打上花火",
   },
   {
@@ -27,6 +86,7 @@ export default [
     singer: "LiSA (织部里沙)",
     img: "/src/assets/img/violet/violet (3).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "紅蓮華",
   },
   {
@@ -34,6 +94,7 @@ export default [
     singer: "YOASOBI (ヨアソビ)",
     img: "/src/assets/img/violet/violet (4).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "ハルカ (Haruka)",
   },
   {
@@ -41,6 +102,7 @@ export default [
     singer: "ヨルシカ (Yorushika)",
     img: "/src/assets/img/violet/violet (5).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "春泥棒",
   },
   {
@@ -48,6 +110,7 @@ export default [
     singer: "ヨルシカ (Yorushika)",
     img: "/src/assets/img/violet/violet (6).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "風を食む",
   },
   {
@@ -55,6 +118,7 @@ export default [
     singer: "周杰伦",
     img: "/src/assets/img/violet/violet (7).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "夜曲",
   },
   {
@@ -62,6 +126,7 @@ export default [
     singer: "ヨルシカ (Yorushika)",
     img: "/src/assets/img/violet/violet (8).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "老人と海 (老人与海)",
   },
   {
@@ -69,6 +134,7 @@ export default [
     singer: "华晨宇",
     img: "/src/assets/img/violet/violet (9).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "斗牛",
   },
   {
@@ -76,6 +142,7 @@ export default [
     singer: "华晨宇",
     img: "/src/assets/img/violet/violet (10).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "无聊人",
   },
   {
@@ -83,6 +150,7 @@ export default [
     singer: "华晨宇",
     img: "/src/assets/img/violet/violet (11).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "烟火里的尘埃",
   },
   {
@@ -90,6 +158,7 @@ export default [
     singer: "米津玄師 (よねづ けんし)",
     img: "/src/assets/img/violet/violet (12).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "海の幽霊 (海之幽灵)",
   },
   {
@@ -97,6 +166,7 @@ export default [
     singer: "华晨宇",
     img: "/src/assets/img/violet/violet (13).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "疯人院",
   },
   {
@@ -104,6 +174,7 @@ export default [
     singer: "曲婉婷",
     img: "/src/assets/img/violet/violet (14).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "我的歌声里",
   },
   {
@@ -111,6 +182,7 @@ export default [
     singer: "ヨルシカ (Yorushika)",
     img: "/src/assets/img/violet/violet (15).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "花人局",
   },
   {
@@ -119,6 +191,7 @@ export default [
     singer: "手嶌葵 (てしま あおい)",
     img: "/src/assets/img/violet/violet (16).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "明日への手紙 (写给明天的信)",
   },
   {
@@ -126,6 +199,7 @@ export default [
     singer: "ReoNa",
     img: "/src/assets/img/violet/violet (17).jpeg",
     bofangFlag: false,
+    id: Math.random().toString().slice(-9),
     musicName: "カナリア (金丝雀)",
   },
 ];

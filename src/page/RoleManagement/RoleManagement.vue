@@ -2,7 +2,6 @@
   <div class="rolemanagement-box connect" element-loading-text="加载中..." :element-loading-svg="svg" v-loading="loading">
     <div>
       <el-button type="success" @click="onChangeRoleDialog">新增</el-button>
-
       <el-popconfirm title="你确定要删除吗?" @confirm="handleDeleteArr">
         <template #reference>
           <el-button type="danger" :disabled="!selectedArr.length">批量删除</el-button>
