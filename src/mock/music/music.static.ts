@@ -8,6 +8,14 @@ export default [
     id: Math.random().toString().slice(-9),
   },
   {
+    music: "/src/assets/mp3/华晨宇 - 点燃银河尽头的篝火.flac",
+    singer: "华晨宇",
+    img: "/src/assets/img/hcy.png",
+    bofangFlag: false,
+    musicName: "点燃银河尽头的篝火",
+    id: Math.random().toString().slice(-9),
+  },
+  {
     music: "/src/assets/mp3/华晨宇 - 小镇里的花 (民乐版).flac",
     singer: "华晨宇",
     img: "/src/assets/img/hcy.png",

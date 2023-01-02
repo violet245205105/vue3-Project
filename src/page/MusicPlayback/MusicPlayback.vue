@@ -15,7 +15,8 @@
                         </el-table-column>
                         <el-table-column label="操作">
                             <template #default="scope">
-                                <el-tooltip class="box-item" effect="dark" content="播放" placement="top">
+                                <el-tooltip class="box-item" effect="dark"
+                                    :content="bofangFlag && scope.$index === musicIndex ? '暂停' : '播放'" placement="top">
                                     <i ref="musiczantingRef"
                                         :class="`iconfont ${(musicIndex === scope.$index) ? `${bofangFlag ? 'icon-zanting' : 'icon-bofang'}` : 'icon-bofang'}`"
                                         @click="(_) => bofang(_, scope.$index)" />
@@ -31,10 +32,17 @@
                 </div>
             </div>
             <div class="music_bottom">
-                <i class="iconfont icon-shangyishou" @click="propMusic" />
-                <i :class="`iconfont ${bofangFlag ? 'icon-zanting' : 'icon-bofang'}`"
-                    @click="(_) => bofang(_, musicIndex)" />
-                <i class="iconfont icon-xiayishou" @click="nextMusic" />
+                <el-tooltip class="box-item" effect="dark" content="上一首" placement="top">
+                    <i class="iconfont icon-shangyishou" @click="propMusic" />
+                </el-tooltip>
+                <el-tooltip class="box-item" effect="dark" :content="bofangFlag ? '暂停' : '播放'" placement="top">
+                    <i :class="`iconfont ${bofangFlag ? 'icon-zanting' : 'icon-bofang'}`"
+                        @click="(_) => bofang(_, musicIndex)" />
+                </el-tooltip>
+                <el-tooltip class="box-item" effect="dark" content="下一首" placement="top">
+                    <i class="iconfont icon-xiayishou" @click="nextMusic" />
+                </el-tooltip>
+
                 <div class="music-slider-box">
                     <div class="music-slider-box-connect">
                         <span>{{ musicList[musicIndex]?.musicName }} - {{ musicList[musicIndex]?.singer }}</span>
@@ -109,10 +117,11 @@ export default defineComponent({
             }
         }
 
-        const bofang = async (e: { target: { className: string; }; }, index?: number) => {
+        const bofang = async (e: { target: { className: string; }; }, index: number) => {
+
             if (e.target.className === "iconfont icon-bofang el-tooltip__trigger el-tooltip__trigger" || e.target.className === "iconfont icon-bofang") {
                 state.bofangFlag = true;
-                state.musicIndex = index ? index : state.musicIndex;
+                state.musicIndex = (index > -1) ? index : state.musicIndex;
                 setTimeout(() => {
                     musicRef.value.play();
                 }, 500);

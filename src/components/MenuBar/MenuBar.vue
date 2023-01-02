@@ -1,15 +1,7 @@
 <template>
   <div class="menu">
-    <el-menu
-      router
-      class="el-menu-vertical-demo"
-      :default-active="routerPath"
-      :collapse="unfold"
-    >
-      <el-menu-item
-        class="violet"
-        disabled
-      >
+    <el-menu router class="el-menu-vertical-demo" :default-active="routerPath" :collapse="unfold">
+      <el-menu-item class="violet" disabled>
         <el-icon size="20">
           <Umbrella />
         </el-icon>
@@ -17,19 +9,22 @@
         </template>
       </el-menu-item>
 
-      <div
-        v-for="item in routesList"
-        :key="item.path"
-      >
-        <el-menu-item
-          v-if="jurisdiction === 'admin' ? true : !item.jurisdiction"
-          :index="item.path"
-        >
+      <div v-for="item in routesList" :key="item.path">
+        <el-menu-item v-if="(jurisdiction === 'admin' ? true : !item.jurisdiction)" :index="item.path">
           <el-icon>
             <component :is="item.icon" />
           </el-icon>
           <template #title>{{ item.name }}</template>
         </el-menu-item>
+        <!-- <el-sub-menu v-if="item.childFlag" index="1">
+          <el-icon>
+            <component :is="item.icon" />
+          </el-icon>
+          <template #title>{{ item.name }}</template>
+          <el-menu-item-group>
+            <el-menu-item index="1-1">item one</el-menu-item>
+          </el-menu-item-group>
+        </el-sub-menu> -->
       </div>
     </el-menu>
   </div>

@@ -91,7 +91,7 @@ import { ElMessage } from "element-plus";
 import type { FormInstance } from "element-plus";
 export default {
   setup() {
-    const captchaRef = ref(null);
+    const captchaRef = ref<any>(null);
     const {
       handleChange,
       ruleFormRef,
@@ -134,7 +134,7 @@ export default {
           } else {
             try {
               let num: number = 3;
-              let timer: number | null | undefined = null;
+              let timer: any = null;
               const res = await register(ruleForm);
               if (res.data.code === 2000) {
                 timer = setInterval(() => {

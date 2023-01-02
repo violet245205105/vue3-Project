@@ -22,6 +22,12 @@ const routes = [
         component: () => import("@/page/RoleManagement/RoleManagement.vue"),
       },
       {
+        path: "/echarts",
+        name: "图表管理",
+        icon: "PieChart",
+        component: () => import("@/page/Echarts/Echarts.vue"),
+      },
+      {
         path: "/videoplayback",
         name: "视频播放",
         icon: "VideoCamera",
